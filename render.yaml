@@ -1,6 +1,6 @@
 # render.yaml
 services:
-  - type: web_service
+  - type: web
     name: ceshi-backend          # 自定义服务名称
     env: node
     branch: main
