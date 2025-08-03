@@ -2,12 +2,15 @@ services:
   - type: web
     name: ceshi-backend
     env: node
+    plan: free
     branch: main
     buildCommand: cd backend && npm install
     startCommand: cd backend && npm start
+    rootDir: backend
 
-  - type: static
+  - type: static_site
     name: ceshi-frontend
+    plan: free
     branch: main
     buildCommand: cd frontend && npm install && npm run build
-    publishPath: frontend/dist
+    publishDir: frontend/dist
