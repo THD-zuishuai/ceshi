@@ -1,0 +1,13 @@
+# render.yaml
+services:
+  - type: web_service
+    name: ceshi-backend          # 自定义服务名称
+    env: node
+    branch: main
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+  - type: static_site
+    name: ceshi-frontend
+    branch: main
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/dist     # 根据你的前端输出目录调整
