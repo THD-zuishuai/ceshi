@@ -1,3 +1,9 @@
+
+# ceshi
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/THD-zuishuai/ceshi)
+
+
 # ProShop eCommerce Platform (v2)
 
 > eCommerce platform built with the MERN stack & Redux.
